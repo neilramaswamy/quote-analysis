@@ -1,0 +1,6 @@
+*.class
+*.jar
+.*
+!/.gitignore
+
+/QuoteAnalysisJava/bin/
