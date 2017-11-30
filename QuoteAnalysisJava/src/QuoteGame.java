@@ -13,7 +13,10 @@ public class QuoteGame {
 	
 	public QuoteGame(List<String> authors) {
 		Parse p = new Parse();
+		p.fillHashMap();
 		passages = p.getData();
+		
+		
 		this.authors = authors;
 		
 		
@@ -21,7 +24,7 @@ public class QuoteGame {
 	
 	public void play() {
 		System.out.println("Please enter identify the following passages"
-				+ "using the syntax title>author. There will be 8 passages\n");
+				+ " using the syntax title>author. There will be 8 passages\n");
 		
 		Scanner s = new Scanner(System.in);
 		
@@ -29,8 +32,6 @@ public class QuoteGame {
 		int score = 0;
 		
 		while(count<8) {
-			
-			
 			int passageIndex = (int) (Math.random()*passages.size());
 			
 			String author = authors.get(passageIndex);
@@ -62,6 +63,6 @@ public class QuoteGame {
 		}
 		s.close();
 		
-		System.out.println("Your answer was "+ score+".");
+		System.out.println("Your score was "+ score+".");
 	}
 }

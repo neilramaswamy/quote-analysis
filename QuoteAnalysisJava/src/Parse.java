@@ -43,7 +43,7 @@ public class Parse {
 		// fill up listifiedTexts
 		ArrayList<ArrayList<String>> fileInfo = getFileNames();
 		for (int i = 0; i < fileInfo.get(0).size(); i++) {
-			listifiedTexts.put(fileInfo.get(0).get(i), 
+			listifiedTexts.put(fileInfo.get(0).get(i).substring(0,fileInfo.get(0).get(i).length()-4), //remove ".txt" with substring
 								splitFile(new File(fileInfo.get(1).get(i))));
 		}
 	}
