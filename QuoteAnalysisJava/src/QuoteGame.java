@@ -43,7 +43,7 @@ public class QuoteGame {
 					passages.get(author).get(sentenceIndex+1)+
 					passages.get(author).get(sentenceIndex+2);
 			
-			System.out.println(quote+"\n\n");
+			System.out.println(quote+"");
 			
 			String answer = s.nextLine();
 			
@@ -51,12 +51,14 @@ public class QuoteGame {
 			
 			if(Levenshtein.distance(answer, authors.get(passageIndex))<=MAX_DISTANCE) {
 				
-				System.out.println("Correct! The identification was " + authors.get(passageIndex) + ".");
+				System.out.println("Correct! The identification was " + authors.get(passageIndex) + "."+
+						"\n-------");
 				
 				score++;
 			}
 			else {
-				System.out.println("Wrong! The identification was " + authors.get(passageIndex) + ".");
+				System.out.println("Wrong! The identification was " + authors.get(passageIndex) + "."+
+						"\n-------");
 			}
 			
 			
