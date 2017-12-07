@@ -26,3 +26,4 @@ This project is licensed under the MIT License - see the (LICENSE.md) file for d
 * Thanks to all the wonderful authors of Amerian Literature. You are the reason this project exists.
 * [Gutenberg](www.gutenberg.org) thanks for the texts.
 * You too [Poetry Foundation](www.poetryfoundation.org).
+* Can't forget the README template that I got from [here](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2).
