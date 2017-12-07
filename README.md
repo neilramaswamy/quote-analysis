@@ -8,12 +8,14 @@ You'll need to have a Java IDE (BlueJ, Eclipse, NetBeans, IntelliJ, etc.).
 
 ### Getting Started
 
-Clone the repository. Add the dependency (commons-io-2.5.jar).
+Clone the repository. Add the dependency (commons-io-2.5.jar). If you're in not in BlueJ, I'm going to assume that you know how to add a dependency.
+
+But if you're in BlueJ, here are some more instructions.
 
 ## Authors
 
-* **[Neil Ramaswamy]**(https://github.com/neilramaswamy)
-* **[RithvikP]**(https://github.com/RithvikP)
+* **Neil Ramaswamy**(https://github.com/neilramaswamy)
+* **RithvikP**(https://github.com/RithvikP)
 
 ## License
 
