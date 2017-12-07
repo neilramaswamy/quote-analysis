@@ -13,7 +13,6 @@ public class QuoteGame {
 	
 	public QuoteGame(List<String> authors) {
 		Parse p = new Parse();
-		p.fillHashMap();
 		passages = p.getData();
 		
 		
@@ -24,7 +23,7 @@ public class QuoteGame {
 	
 	public void play() {
 		System.out.println("Please enter identify the following passages"
-				+ " using the syntax title>author. There will be 8 passages\n");
+				+ " using the syntax author>title. There will be 8 passages\n");
 		
 		Scanner s = new Scanner(System.in);
 		
@@ -43,7 +42,15 @@ public class QuoteGame {
 					passages.get(author).get(sentenceIndex+1)+
 					passages.get(author).get(sentenceIndex+2);
 			
-			System.out.println(quote+"\n\n");
+<<<<<<< HEAD
+<<<<<<< HEAD
+			System.out.println(quote+"\n");
+=======
+			System.out.println(quote+"");
+>>>>>>> 0c098256cddf69997fee35b4f24d10169429c8f5
+=======
+			System.out.println(quote+"");
+>>>>>>> 0c098256cddf69997fee35b4f24d10169429c8f5
 			
 			String answer = s.nextLine();
 			
@@ -51,13 +58,17 @@ public class QuoteGame {
 			
 			if(Levenshtein.distance(answer, authors.get(passageIndex))<=MAX_DISTANCE) {
 				
-				System.out.println("Correct! The identification was " + authors.get(passageIndex) + ".");
+				System.out.println("Correct! The identification was " + authors.get(passageIndex) + "."+
+						"\n-------");
 				
 				score++;
 			}
 			else {
-				System.out.println("Wrong! The identification was " + authors.get(passageIndex) + ".");
+				System.out.println("Wrong! The identification was " + authors.get(passageIndex) + "."+
+						"\n-------");
 			}
+			
+			System.out.println("");
 			
 			
 		}

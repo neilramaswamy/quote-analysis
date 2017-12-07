@@ -33,7 +33,18 @@ public class Parse {
 	 * getter
 	 */
 	public HashMap<String, ArrayList<String>> getData() {
+		fillHashMap();
 		return listifiedTexts;
+	}
+	
+	public ArrayList<String> getAnswers() {
+		fillHashMap();
+		ArrayList<String> toReturn = new ArrayList<String>();
+		Set<String> keys = listifiedTexts.keySet();
+		for (String k: keys) {
+			toReturn.add(k);
+		}
+		return toReturn;
 	}
 
 	/**
@@ -50,7 +61,6 @@ public class Parse {
 	}
 	
 	/**
-	 * *Incomplete Method: Change to Relative File Path
 	 * Gives information about the files in the folder texts.
 	 * Gives back [ [name of files], [Strings of filePaths to a file] ]
 	 * @return an ArrayList of 2 ArrayLists: one of "author>title" and the 
@@ -58,7 +68,7 @@ public class Parse {
 	 */
 	public ArrayList<ArrayList<String>> getFileNames() {
 		ArrayList<ArrayList<String>> toReturn = new ArrayList<ArrayList<String>>();
-		File folder = new File("/Users/NeilRamaswamy/dev/quote-analysis/QuoteAnalysisJava/src/texts");
+		File folder = new File("./src/texts");
 		// use relative paths!!
 		// File folder = new File("./texts"); doesn't work
 		// 2 parts: file path; text attributes
@@ -116,15 +126,9 @@ public class Parse {
 	
 	public static void main(String[] args) {
 		Parse p = new Parse();
-		p.fillHashMap();
-		HashMap<String, ArrayList<String>> map = p.getData();
-		Set<String> keys = map.keySet();
-		for (String k: keys) {
-			System.out.println(k + ": ");
-			ArrayList<String> sentences = map.get(k);
-			for (int i = 0; i < sentences.size(); i++) {
-				System.out.println(sentences.get(i));
-			}
+		ArrayList<String> s = p.getAnswers();
+		for (String str: s) {
+			System.out.println(str);
 		}
 	}
 	
