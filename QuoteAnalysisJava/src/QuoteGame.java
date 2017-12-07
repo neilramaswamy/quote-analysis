@@ -38,11 +38,17 @@ public class QuoteGame {
 			int sentenceIndex = (int) (Math.random()*(
 					passages.get(author).size()-3));
 			
-			String quote = passages.get(author).get(sentenceIndex)+
-					passages.get(author).get(sentenceIndex+1)+
-					passages.get(author).get(sentenceIndex+2);
+			String quote="";
+			if(passages.get(author).size()>sentenceIndex+2){
+				quote = passages.get(author).get(sentenceIndex)+
+						passages.get(author).get(sentenceIndex+1)+
+						passages.get(author).get(sentenceIndex+2);
+			}
+			else{
+				quote = passages.get(author).get(sentenceIndex);
+			}
 			
-			System.out.println(quote+"\n");
+			System.out.println(quote);
 
 			String answer = s.nextLine();
 			
@@ -59,9 +65,7 @@ public class QuoteGame {
 				System.out.println("Wrong! The identification was " + authors.get(passageIndex) + "."+
 						"\n-------");
 			}
-			
-			System.out.println("");
-			
+						
 			
 		}
 		s.close();
