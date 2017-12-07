@@ -42,16 +42,8 @@ public class QuoteGame {
 					passages.get(author).get(sentenceIndex+1)+
 					passages.get(author).get(sentenceIndex+2);
 			
-<<<<<<< HEAD
-<<<<<<< HEAD
 			System.out.println(quote+"\n");
-=======
-			System.out.println(quote+"");
->>>>>>> 0c098256cddf69997fee35b4f24d10169429c8f5
-=======
-			System.out.println(quote+"");
->>>>>>> 0c098256cddf69997fee35b4f24d10169429c8f5
-			
+
 			String answer = s.nextLine();
 			
 			count++;
