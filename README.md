@@ -8,7 +8,7 @@ You'll need to have a Java IDE (BlueJ, Eclipse, NetBeans, IntelliJ, etc.).
 
 ### Getting Started
 
-Clone the repository. Add the dependency [commons i/o](commons-io-2.5.jar).
+Clone the repository. Add the dependency (commons-io-2.5.jar).
 
 ## Authors
 
@@ -17,7 +17,7 @@ Clone the repository. Add the dependency [commons i/o](commons-io-2.5.jar).
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the (LICENSE.md) file for details
 
 ## Acknowledgments
 
