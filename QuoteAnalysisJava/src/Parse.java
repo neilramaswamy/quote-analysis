@@ -68,7 +68,7 @@ public class Parse {
 	 */
 	public ArrayList<ArrayList<String>> getFileNames() {
 		ArrayList<ArrayList<String>> toReturn = new ArrayList<ArrayList<String>>();
-		File folder = new File("../src/texts");
+		File folder = new File("./src/texts");
 		// use relative paths!!
 		// File folder = new File("./texts"); doesn't work
 		// 2 parts: file path; text attributes
